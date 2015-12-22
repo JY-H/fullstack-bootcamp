@@ -3,6 +3,46 @@
 <head>
   <title>Dating Website</title>
   <meta name="author" content="JiaYan Hu">
+
+  <style>
+    fieldset {
+      background-color: lightyellow;
+      border: 10px solid yellow;
+      margin-bottom: 10px;
+      width: 720px;
+    }
+
+    label {
+      width: 180px;
+      display: inline-block;
+      text-align: right;
+      vertical-align: top;
+    }
+
+    label .auto-width {
+      width: auto;
+    }
+
+    .anchors {
+      vertical-align: top;
+      text-align: center;
+      background-color: lightblue;
+    }
+
+    label:hover {
+      font-size: 20px;
+    }
+
+    input:hover {
+      font-size: 20px;
+    }
+
+    textarea {
+      width: 360px;
+      height: 50px;
+    }
+
+  </style>
 </head>
 <body>
   <h3>Please Enter Your Details For Our Dating Website!</h3>
@@ -16,7 +56,7 @@
     <fieldset>
       <legend>Your General Details</legend>
       <label for="name">Name: </label><input type="text" placeholder="Your full name" name="name" required> <br>
-      <label for="gender">Gender: </label> <input type="radio" name="gender" value="male"> Male <input type="radio" value="female" name="gender"> Female <br>
+      <label for="gender" class="auto-width">Gender: </label> <input type="radio" name="gender" value="male"> Male <input type="radio" value="female" name="gender"> Female <br>
       <label for="age">Age: </label><input type="number" name="age" required> <br>
       <label for="dob">Date of Birth: </label><input type="date" name="dob"> <br>
       <label for="fav-color">Favorite color: </label><input type="color" name="fav-color"> <br>
@@ -33,8 +73,8 @@
 
     <fieldset>
       <legend>Your Indicators</legend>
-      <label for="height">Height: </label>Short<input type="range" min="0" max="100" step="5" name="height" value="50">Tall <br>
-      <label for="salary">Salary: </label>Poor<input type="range" min="0" max="100" step="5" name="salary" value="50">Rich <br>
+      <label for="height">Height: </label> <span class="anchors">Short </span> <input type="range" min="0" max="100" step="5" name="height" value="50"><span class="anchors">Tall </span> <br>
+      <label for="salary">Salary: </label> <span class="anchors">Poor </span> <input type="range" min="0" max="100" step="5" name="salary" value="50"><span class="anchors">Rich </span> <br>
     </fieldset>
 
     <fieldset>
@@ -42,12 +82,14 @@
       <label for="email">Email: </label><input type="email" name="email"> <br>
       <label for="tel">Mobile: </label><input type="tel" name="tel"> <br>
       <label for="addr">Address: </label><textarea name="addr"></textarea> <br>
-      <label for="contacts">Methods to contact you: </label>
+      <label for="contacts" class="auto-width">Methods to contact you: </label>
         <input type="checkbox" name="contacts" value="email">Email
         <input type="checkbox" name="contacts" value="whatsapp">Whatsap
         <input type="checkbox" name="contacts" value="in-app">In-app chat
     </fieldset>
     <input type="submit" value="Submit">
   </form>
+
+  <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
 </body>
 </html>
