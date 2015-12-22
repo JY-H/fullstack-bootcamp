@@ -1,2 +1,2 @@
 # fullstack-bootcamp
-Because I really should start learning web dev... 
+Repository to put all any and all code that I write as I climb the ladder of MEAN stack. 
